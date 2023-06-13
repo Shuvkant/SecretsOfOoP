@@ -6,26 +6,24 @@ int feetToInches(int feet);
 void feetToInches(int feet, int &inch);
 int main()
 {
-    int inches1 = feetToInches();
-    cout << "Conversion using functions without using argument: " << inches1 << endl;
+    cout << "Conversion using functions without using argument: " << feetToInches() << endl;
     int feet2;
     cout << "Enter the length in feet: ";
     cin >> feet2;
     int inches2;
-    inches2 = feetToInches(feet2);
-    cout << "Conversion using function with one argument: " << inches2 << endl;
+    cout << "Conversion using function with one argument: " << feetToInches(feet2) << endl;
     int feet3;
     cout << "Enter the length: ";
     cin >> feet3;
     int inches3;
-    feetToInches(feet3,inches3);
-    cout << "Conversion using function with two argument (pass by reference)" << inches3 << endl;
+    feetToInches(feet3, inches3);
+    cout << "Conversion using function with two argument (pass by reference): " << inches3 << endl;
     return 0;
 }
 int feetToInches()
 {
     int feet;
-    cout << "Enter the length in feet:";
+    cout << "\nEnter the length in feet:";
     cin >> feet;
     return feet * 12;
 }
@@ -35,5 +33,5 @@ int feetToInches(int feet)
 }
 void feetToInches(int feet, int &inch)
 {
-    inch=feet*12;
+    inch = feet * 12;
 }
