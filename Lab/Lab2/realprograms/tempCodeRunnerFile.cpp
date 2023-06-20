@@ -12,7 +12,7 @@ void printData(calendar_date &man)
 {
     cout << setw(2) << setfill('0') << man.mm << "/"
          << setw(2) << setfill('0') << man.dd << "/"
-         << setw(4) << setfill('0') << man.yy<<endl;
+         << setw(4) << setfill('0') << man.yy << "/";
 }
 int main()
 {
