@@ -1,26 +1,22 @@
-// This program gives the current salary of the officers after increment*/
+// This program gives the current salary of the officers after increment
 #include <iostream>
 #include <iomanip>
 using namespace std;
-float salaryAfterincrement(int salary, int increment);
+float salaryAfterincrement(float  salary, float increment);
 int main()
 {
-     int salary1 = 35000, salary2 = 25000, salary3 = 24000, salary4 = 18000;
-     int increment1 = 9, increment2 = 10, increment3 = 12, increment4 = 12;
-     float newsal = salaryAfterincrement(salary1, increment1);
+     int ceo = 35000, infoOfficer = 25000, SyAna = 24000, programmer = 18000;
+     int incrementCEO = 9, incrementIO = 10, incrementSyAna = 12, incrementPro = 12;
      cout << setw(24) << "Chief Exscutive Officer:"
-          << " Rs." << setw(5) << newsal << endl;
-     float newsal2 = salaryAfterincrement(salary2, increment2);
+          << " Rs." << setw(5) << salaryAfterincrement(ceo, incrementCEO) << endl;
      cout << setw(24) << "Information Officer:"
-          << " Rs." << setw(5) << newsal2 << endl;
-     float newsal3 = salaryAfterincrement(salary3, increment3);
+          << " Rs." << setw(5) << salaryAfterincrement(infoOfficer, incrementIO) << endl;
      cout << setw(24) << "System Analyst:"
-          << " Rs." << setw(5) << newsal3 << endl;
-     float newsal4 = salaryAfterincrement(salary4, increment4);
+          << " Rs." << setw(5) << salaryAfterincrement(SyAna, incrementSyAna) << endl;
      cout << setw(24) << "Programmer:"
-          << " Rs." << setw(5) << newsal4 << endl;
+          << " Rs." << setw(5) << salaryAfterincrement(programmer, incrementPro) << endl;
 }
-float salaryAfterincrement(int salary, int increment)
+float salaryAfterincrement(float  salary, float increment)
 {
      float newSalary;
      newSalary = ((100 + increment) / 100.0) * salary;
