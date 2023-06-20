@@ -2,8 +2,8 @@
 using inlune function*/
 #include<iostream>
 using namespace std;
-inline int salafterTax(float salary){
-int taxAmount;
+inline float salafterTax(float salary){
+float  taxAmount;
 taxAmount=0.1*salary;
 return salary-taxAmount;
 }
